@@ -3,7 +3,8 @@ CREATE TABLE employee (
     id int NOT NULL PRIMARY KEY,
     username text,
     name text,
-    surname text
+    surname text,
+	jobtitleid int
 );
 
 INSERT INTO employee VALUES

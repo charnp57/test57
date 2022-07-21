@@ -7,6 +7,6 @@ CREATE TABLE jobtitle (
     PRIMARY KEY(id)
 );
 ALTER TABLE employee
-ADD FOREIGN KEY (JOBTITLEBODY) REFERENCES jobtitle(body);
+ADD FOREIGN KEY (jobtitleid) REFERENCES jobtitle(id);
 -- +goose Down
 DROP TABLE jobtitle;
